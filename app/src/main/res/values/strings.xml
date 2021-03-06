@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pet The Turtle</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="author">Yağız Şimşek</string>
+    <string name="follow">Follow me</string>
+    <string name="action_info">About</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="headsortails">Heads or Tails</string>
+    <string name="github">Github</string>
+    <string name="instagram">Instagram</string>
+    <string name="reddit">Reddit</string>
+    <string name="facebook">Facebook</string>
+    <string name="telegram">Telegram</string>
+    <string name="twitter">Twitter</string>
+    <string name="src">Get source</string>
+    <string name="ttrl">watch tutorial</string>
+    <string name="youtube">Youtube</string>
+    <string name="about">About</string>
+</resources>
