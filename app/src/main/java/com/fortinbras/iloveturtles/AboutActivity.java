@@ -16,8 +16,7 @@ import android.widget.Button;
 
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //TODO: ADD YOUTUBE CHANNEL
-    Button btn_osl, btn_tnx, btn_clog, btn_reddit, btn_ig, btn_telegram, btn_github;
+Button btn_osl, btn_tnx, btn_clog, btn_reddit, btn_ig, btn_telegram, btn_github, btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +26,13 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setTitle(R.string.app_name);
         //btn
+        btn = (Button)findViewById(R.id.button);
         btn_reddit = (Button) findViewById(R.id.btn_reddit);
         btn_ig = (Button) findViewById(R.id.btn_instagram);
         btn_telegram = (Button) findViewById(R.id.btn_telegram);
         btn_github = (Button) findViewById(R.id.btn_github);
         //onclicklistener
+        btn.setOnClickListener(this);
         btn_reddit.setOnClickListener(this);
         btn_ig.setOnClickListener(this);
         btn_telegram.setOnClickListener(this);
@@ -57,6 +58,12 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                     i.setData(Uri.parse(ig));
                     startActivity(i);
                     break;
+                case R.id.button:
+                String sc = "https://github.com/ygzsimsek/PetTheTurtle";
+                Intent c = new Intent(Intent.ACTION_VIEW);
+                c.setData(Uri.parse(sc));
+                startActivity(c);
+                break;
                 case R.id.btn_reddit:
                     String rd = "https://www.reddit.com/user/fortinbrasgod/";
                     Intent r = new Intent(Intent.ACTION_VIEW);
